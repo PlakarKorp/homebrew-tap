@@ -3,33 +3,75 @@ cask "plakar" do
   name "plakar"
   desc "Plakar is a secure backup solution for all your data sources, including filesystems, S3 buckets, Cloud resources, SFTP servers, and more."
   homepage "https://plakar.io/"
-  version "1.0.3"
+  version "1.0.4"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "plakar"
+  manpage "./man/plakar-cat.1"
+  manpage "./man/plakar-ui.1"
+  manpage "./man/plakar-locate.1"
+  manpage "./man/plakar-diag.1"
+  manpage "./man/plakar-archive.1"
+  manpage "./man/plakar-source.1"
+  manpage "./man/plakar-destination.1"
+  manpage "./man/plakar-store.1"
+  manpage "./man/plakar-digest.1"
+  manpage "./man/plakar-scheduler.1"
+  manpage "./man/plakar-diff.1"
+  manpage "./man/plakar-server.1"
+  manpage "./man/plakar-ptar.1"
+  manpage "./man/plakar-agent.1"
+  manpage "./man/plakar-dup.1"
+  manpage "./man/plakar-info.1"
+  manpage "./man/plakar-clone.1"
+  manpage "./man/plakar-version.1"
+  manpage "./man/plakar-mount.1"
+  manpage "./man/plakar-maintenance.1"
+  manpage "./man/plakar-prune.1"
+  manpage "./man/plakar-ls.1"
+  manpage "./man/plakar-sync.1"
+  manpage "./man/plakar-service.1"
+  manpage "./man/plakar-backup.1"
+  manpage "./man/plakar-create.1"
+  manpage "./man/plakar-restore.1"
+  manpage "./man/plakar-check.1"
+  manpage "./man/plakar-rm.1"
+  manpage "./man/plakar-logout.1"
+  manpage "./man/plakar-login.1"
+  manpage "./man/plakar-token.1"
+  manpage "./man/plakar-pkg-build.1"
+  manpage "./man/plakar-pkg-add.1"
+  manpage "./man/plakar-pkg-rm.1"
+  manpage "./man/plakar-pkg-create.1"
+  manpage "./man/plakar-pkg-show.1"
+  manpage "./man/plakar-policy.1"
+  manpage "./man/plakar.1"
+  manpage "./man/plakar-query.7"
+  manpage "./man/plakar-pkg-manifest.yaml.5"
+  manpage "./man/plakar-pkg-recipe.yaml.5"
 
   on_macos do
     on_intel do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_darwin_amd64.tar.gz"
-      sha256 "de361aceadf6959a47f484044d41572c05b4019a19e0f42b782c1b379e5ab618"
+      sha256 "430ebd71e55e1861487c5c9968df7da05433f9ec27c90b3d82f45339311d795f"
     end
     on_arm do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_darwin_arm64.tar.gz"
-      sha256 "b59c4deb692388051014213aba0f6fe82c5fcb9acd708900ee8b9f8a42a8cde4"
+      sha256 "601f709fbd6453c32ae28a325c7d0b24b04849307f1acc686a46fd524b1d7352"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_linux_amd64.tar.gz"
-      sha256 "7f336f0dc98fbf9ab8370221d14566a8ae1a1de4e94e2779d3c8b7be8208fe64"
+      sha256 "f802ced4e9037741ebabc6956720946725c1677923541e9a23c8ff173a68e8cb"
     end
     on_arm do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_linux_arm64.tar.gz"
-      sha256 "0f4d2e617772ecc6e13c0bfd98515f18144f2d26ddc862d99efb418c25cdd0b1"
+      sha256 "446d91ce40731222f3ba41fbbee3c473a31784f3ec4a6e568e1f6a7ccaf9488e"
     end
   end
 
