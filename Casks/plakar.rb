@@ -56,22 +56,22 @@ cask "plakar" do
   on_macos do
     on_intel do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_darwin_amd64.tar.gz"
-      sha256 "430ebd71e55e1861487c5c9968df7da05433f9ec27c90b3d82f45339311d795f"
+      sha256 "38649b2a1f2aa9cd97ffe97c8e7ae4b69069e12d6d78692adb54784e5d778a2d"
     end
     on_arm do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_darwin_arm64.tar.gz"
-      sha256 "601f709fbd6453c32ae28a325c7d0b24b04849307f1acc686a46fd524b1d7352"
+      sha256 "0141abbeada8d8698bcdde5fce7fccc6a6cd987d3bde8148b577e96d663874a1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_linux_amd64.tar.gz"
-      sha256 "f802ced4e9037741ebabc6956720946725c1677923541e9a23c8ff173a68e8cb"
+      sha256 "1fdbca9c63f02d28137739e1cae5d493bd81bd2d0182b3b5ac2fbb61f23fea4a"
     end
     on_arm do
       url "https://github.com/PlakarKorp/plakar/releases/download/v#{version}/plakar_#{version}_linux_arm64.tar.gz"
-      sha256 "446d91ce40731222f3ba41fbbee3c473a31784f3ec4a6e568e1f6a7ccaf9488e"
+      sha256 "affad45bfac62238e386a601692f8051abe0757e514d2cdd7209fd48ffdb47d8"
     end
   end
 
